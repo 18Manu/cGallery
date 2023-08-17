@@ -12,3 +12,6 @@
 .detalles{
     display:flex;
 }
+.btn{
+    margin: 20px;
+}
