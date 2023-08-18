@@ -1,8 +1,7 @@
-import { Component, DEFAULT_CURRENCY_CODE, NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './componentes/home/home.component';
 import { ProductosComponent } from './componentes/productos/productos.component';
-import { DecorativosComponent } from './componentes/decorativos/decorativos.component';
 import { VajillasComponent } from './componentes/vajillas/vajillas.component';
 import { JarronesComponent } from './componentes/jarrones/jarrones.component';
 import { LoginComponent } from './componentes/login/login.component';
@@ -33,10 +32,9 @@ import { HomeUserComponent } from './componentes/home-user/home-user.component';
 import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: ' ', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'productos',component:ProductosComponent},
-  {path:'deco', component:DecorativosComponent},
   {path:'vajillas',component:VajillasComponent},
   {path:'jarrones',component:JarronesComponent},
   {path: 'login', component: LoginComponent},
@@ -49,25 +47,9 @@ const routes: Routes = [
   {path: 'clientes', component: ClientesComponent},
   {path: 'pedidos', component: PedidosComponent},
   {path: 'galeria', component:GalleriaComponent},
-  {path: 'admi_product', component:AdmiProductComponent },
-  {path: 'usuarios', component: UsuariosComponent},
-  {path: 'proveedores', component: ProveedoresComponent},
-  {path: 'decorativos', component: DecorativosComponent},
-  {path: 'detalles-decorativo1', component: DetallesDecorativo1Component},
-  {path: 'detalles-decorativo2', component: DetallesDecorativo2Component},
-  {path: 'detalles-decorativo3', component: DetallesDecorativo3Component},
-  {path: 'detalles-decorativo4', component: DetallesDecorativo4Component},
-  {path: 'detalles-vajilla1', component: DetallesVajilla1Component},
-  {path: 'detalles-vajilla2', component: DetallesVajilla2Component},
-  {path: 'detalles-vajilla3', component: DetallesVajilla3Component},
-  {path: 'detalles-vajilla4', component: DetallesVajilla4Component},
-  {path: 'detalles-jarron1', component: DetallesJarron1Component},
-  {path: 'detalles-jarron2', component: DetallesJarron2Component},
-  {path: 'detalles-jarron3', component: DetallesJarron3Component},
-  {path: 'detalles-jarron4', component: DetallesJarron4Component},
-  {path: 'home-user', component: HomeUserComponent }, // Cambia esto al componente correcto
+  {path: 'admi-product', component:AdmiProductComponent },
+  {path: 'usuarios', component: UsuariosComponent}
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
