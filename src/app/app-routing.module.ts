@@ -32,7 +32,7 @@ import { HomeUserComponent } from './componentes/home-user/home-user.component';
 import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
 
 const routes: Routes = [
-  {path: ' ', component: HomeComponent},
+  {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'productos',component:ProductosComponent},
   {path:'vajillas',component:VajillasComponent},
