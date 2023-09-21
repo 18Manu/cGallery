@@ -29,7 +29,7 @@ export class LoginComponent {
         // Manejar la respuesta exitosa del servidor
         console.log(res);
         if (res.message === 'Autenticación exitosa') {
-          this.router.navigate(['/home-user']);
+          this.router.navigate(['/productos']);
         }
       },
       (err: any) => {
