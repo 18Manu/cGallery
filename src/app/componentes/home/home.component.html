@@ -56,6 +56,15 @@
     <button type="button" class="btn btn-custom btn-block" (click)="login()">Inicia sesión para ver más</button>
   </div>
   
+  <div id="location">
+    <h1>Información del Local</h1>
+    <p><strong>Nombre del Local:</strong> {{ localName }}</p>
+    <p><strong>Latitud:</strong> {{ ubicacionLocal.latitude }}</p>
+    <p><strong>Longitud:</strong> {{ ubicacionLocal.longitude }}</p>
+  </div>
+
+  <div id="map" style="height: 400px;"></div>
+  
   
   <div class="vision-mision-valores">
     <h3>Visión, Misión y Valores</h3>
